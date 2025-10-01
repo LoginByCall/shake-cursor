@@ -1,26 +1,56 @@
-# shake-cursor
-Shake your mouse to find the cursor in Ubuntu
+# Shake Cursor
 
-Eng: This application runs as a service in Ubuntu 24 and temporarily increases the size of the mouse cursor for easy detection (you just need to move the mouse left and right).
+**EN:** Shake the mouse or touchpad left–right quickly to temporarily enlarge the cursor (like on macOS).  
+**ES:** Mueve rápidamente el ratón o el touchpad de izquierda a derecha para agrandar temporalmente el cursor (como en macOS).  
+**RU:** Быстро потрясите мышкой или тачпадом «влево–вправо», чтобы временно увеличить курсор (как в macOS).
 
-How it use
+---
 
-1. Build:
-   sudo apt update
-   sudo apt install build-essential pkg-config libglib2.0-dev libevdev-dev
-   make
-3. Install as user-service: make install
-4. Check status: systemctl --user status shake-cursor.service
-5. Remove: make uninstall
+## Features / Características / Особенности
 
-Rus: Это приложение запускается как сервис в Убунту 24 и временно увеличивает размер курсора мыши для его простого обнаружения (вам просто нужно помотать мышью вправо-влево).
+- System tray icon with settings menu  
+- Works with both mouse (REL_X) and touchpad (ABS_X)  
+- Adjustable parameters:
+  - Max cursor size
+  - Duration
+  - Sensitivity thresholds
+  - Flip count
+  - Polling interval
 
-Как пользоваться
+---
 
-1. Сборка:
-   sudo apt update
-   sudo apt install build-essential pkg-config libglib2.0-dev libevdev-dev
-   make
-3. Установка + автозапуск как user-сервис: make install
-4. Проверка статуса: systemctl --user status shake-cursor.service
-5. Удаление: make uninstall
+## Installation / Instalación / Установка
+
+### Dependencies / Dependencias / Зависимости
+
+```bash
+sudo apt update
+sudo apt install -y build-essential pkg-config \
+  libevdev-dev libglib2.0-dev libgtk-3-dev \
+  libayatana-appindicator3-dev
+```
+
+Build & Install / Compilar e instalar / Сборка и установка
+``` bash
+make
+make install
+```
+
+After installation, the service will run automatically under your user session.
+Después de la instalación, el servicio se ejecutará automáticamente en tu sesión de usuario.
+После установки сервис будет автоматически запускаться в вашей пользовательской сессии.
+
+Usage / Uso / Использование
+
+* Shake the mouse/touchpad → cursor enlarges for N seconds.
+* Tray icon → right-click → "Preferences…" to configure parameters.
+* Config file: ~/.config/shake-cursor/config.ini
+* To stop:
+
+```bash
+make uninstall
+```
+
+License / Licencia / Лицензия
+
+MIT
