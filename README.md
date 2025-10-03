@@ -1,10 +1,3 @@
-````markdown
-<p align="center">
-  <img src="https://img.shields.io/badge/Ubuntu-24.04%2B-brightgreen" alt="Ubuntu 24.04+">
-  <img src="https://img.shields.io/badge/Wayland%2FX11-supported-blue" alt="Wayland/X11">
-  <img src="https://img.shields.io/badge/license-MIT-lightgrey" alt="License">
-</p>
-
 # Shake Cursor
 
 **EN:** Shake the mouse or touchpad left–right to temporarily enlarge the cursor (like on macOS).  
