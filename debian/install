@@ -1,0 +1,2 @@
+shake-cursor usr/bin/
+debian/shake-cursor.service usr/lib/systemd/user/

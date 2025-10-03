@@ -1,0 +1,5 @@
+515333e6024da7c2343eeee322ea452e  usr/bin/shake-cursor
+e353b780062a4d4802b7b328d2406eca  usr/lib/systemd/system/shake-cursor.service
+e353b780062a4d4802b7b328d2406eca  usr/lib/systemd/user/shake-cursor.service
+4427917c7062ccfcec6e9f7286fda767  usr/share/doc/shake-cursor/changelog.Debian.gz
+3d62902cf3e81c1356d23bf04375006a  usr/share/doc/shake-cursor/copyright

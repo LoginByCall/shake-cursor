@@ -1,0 +1,18 @@
+#!/usr/bin/make -f
+# минимальные правила для сборки пакета shake-cursor
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	$(MAKE)
+
+override_dh_auto_clean:
+	$(MAKE) clean
+
+# Здесь ключ: вызываем make install с DESTDIR, чтобы не трогать живую систему
+override_dh_auto_install:
+	$(MAKE) install DESTDIR=$(CURDIR)/debian/shake-cursor
+

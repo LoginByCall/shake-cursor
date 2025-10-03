@@ -1,0 +1,13 @@
+Package: shake-cursor
+Version: 1.0-1
+Architecture: amd64
+Maintainer: A1ex <2246636@gmail.com>
+Installed-Size: 44
+Depends: libayatana-appindicator3-1 (>= 0.2.92), libc6 (>= 2.34), libevdev2 (>= 0.9.1), libglib2.0-0t64 (>= 2.36.0), libgtk-3-0t64 (>= 3.0.0), init-system-helpers (>= 1.52)
+Section: utils
+Priority: optional
+Homepage: https://github.com/<your_username>/shake-cursor
+Description: Shake-to-Find cursor enlarger (mouse/touchpad)
+ A lightweight background utility: shake mouse or touchpad left–right
+ to temporarily enlarge the cursor (like macOS). Includes tray icon
+ with preferences. Works with REL (mouse) and ABS (touchpad) events.

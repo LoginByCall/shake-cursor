@@ -1,0 +1,12 @@
+[Unit]
+Description=Shake-to-Find cursor enlarger (user service)
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/shake-cursor
+Restart=on-failure
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,13 @@
+Package: shake-cursor-dbgsym
+Package-Type: ddeb
+Source: shake-cursor
+Version: 1.0-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: A1ex <2246636@gmail.com>
+Installed-Size: 19
+Depends: shake-cursor (= 1.0-1)
+Section: debug
+Priority: optional
+Description: debug symbols for shake-cursor
+Build-Ids: 3070a47f4cd33cb74b180f0534c80e413c55235d
